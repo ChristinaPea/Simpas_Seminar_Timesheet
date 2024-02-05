@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Simpas Seminar Schedule</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('simpas_banner.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative; /* Added position relative for absolute positioning */
+    }
+    .background-text {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        
+        
+        color: white;
+        font-size: 24px;
+    }
+    .big-text {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .small-text {
+        font-size: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+    }
+    img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        color: black;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 10px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="background-text">
+   
+    <span class="big-text">Simpas</span><br>
+    <span class="small-text"> World class, multi-disciplinary research facility.</span> 
+</div>
+<div class="container">
+    <img src="Simpas_Logo.png">
+    <h1>Welcome to Simpas Seminar Schedule</h1>
+    <h2><strong>My Program is:<class="big-text"></strong></h2>
+        <p>(choose one of the following)</p>
+    <div class="button-container">
+        <button onclick="window.location.href='https://forms.gle/z9d3xYP1zKmoUYKz9'">MSRI OR SEU-Monash</button>
+        <button onclick="window.location.href='https://forms.gle/Bnzbp7Tafq53gdrn9'">Other Joint Programs</button>
+    </div>
+</div>
+</body>
+</html>
