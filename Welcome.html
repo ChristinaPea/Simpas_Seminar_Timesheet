@@ -1,99 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to Simpas Seminar Schedule</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-image: url('simpas_banner.jpg');
-        background-size: cover;
-        background-position: center;
-        position: relative; /* Added position relative for absolute positioning */
-    }
-    .background-text {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        
-        
-        color: white;
-        font-size: 24px;
-    }
-    .big-text {
-        font-size: 36px;
-        font-weight: bold;
-    }
-    .small-text {
-        font-size: 20px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-    }
-    img {
-        width: 150px;
-        margin-bottom: 20px;
-    }
-    h1 {
-        color: #333;
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    p {
-        color: black;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin: 0 10px;
-    }
-    button:hover {
-        background-color: #0056b3;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Simpas Seminar Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('simpas_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .background-text {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+        }
+        .big-text {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .small-text {
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: calc(100% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+           
+
+        }
+        img {
+           
+            max-width: 20%; /* Max width for Simpas Logo */
+            margin-bottom: 20px;
+            max-size: 100%;
+            height: auto;
+        }
+        h1, p {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            margin-top: 20px;
+           
+        }
+        button {
+            flex: 3;
+            padding: 3px 30px; /* Adjusted padding for buttons */
+            font-size: 18px; /* Adjusted font size for buttons */
+            margin: 0 40px;
+            max-width: 300px;
+            min-width: 180px;
+            color: white;
+            background-color: rgb(70, 84, 221);
+            border-color: rgb(70, 84, 221);
+            border-radius: 10px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            img {
+                width: 80%;
+            }
+            .button-container {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            button {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 40%;
+            }
+        }
+        @media (max-width: 1200px) {
+            img {
+                width: 60%;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="background-text">
-   
-    <span class="big-text">Simpas</span><br>
-    <span class="small-text"> World class, multi-disciplinary research facility.</span> 
-</div>
-<div class="container">
-    <img src="Simpas_Logo.png">
-    <h1>Welcome to Simpas Seminar Schedule</h1>
-    <h2><strong>My Program is:<class="big-text"></strong></h2>
-        <p>(choose one of the following)</p>
-    <div class="button-container">
-        <button onclick="window.location.href='https://forms.gle/z9d3xYP1zKmoUYKz9'">MSRI OR SEU-Monash</button>
-        <button onclick="window.location.href='https://forms.gle/Bnzbp7Tafq53gdrn9'">Other Joint Programs</button>
+    <div class="background-text">
+        <span class="big-text">Simpas</span><br>
+        <span class="small-text">World class, multi-disciplinary research facility.</span>
     </div>
-</div>
+    <div class="container">
+        <img src="Simpas_Logo.png" alt="Simpas Logo">
+        <h1>Welcome to Simpas Seminar Schedule</h1>
+        <p>Please select your location:</p>
+        <div class="button-container">
+            <button onclick="window.location.href='https://forms.gle/GaKqVzaMHsyYTAEE8';">Suzhou</button>
+            <button onclick="window.location.href='https://forms.gle/kQ53atBMi7TN4ZGT9';">Other Locations</button>
+        </div>
+    </div>
 </body>
 </html>
